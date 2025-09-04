@@ -1,0 +1,72 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Express-style Dashboard Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <div class="brand">EXPRESS WALLET (demo)</div>
+    <ul class="menu">
+      <li class="active">My account</li>
+      <li>Affiliate program</li>
+      <li>Referral exchange</li>
+      <li>Promotional materials</li>
+      <li>Up Balance</li>
+      <li>Withdrawal</li>
+      <li>History</li>
+      <li>Technical support</li>
+      <li>Sign Out</li>
+    </ul>
+  </div>
+  <div class="main">
+    <header>
+      <div class="stats">
+        <div class="stat">
+          <div class="label">Miner speed</div>
+          <div class="value" id="minerSpeed">0.10 MH/s</div>
+        </div>
+        <div class="stat">
+          <div class="label">Main balance</div>
+          <div class="value" id="mainBalance">0.73274 RUR</div>
+        </div>
+        <div class="stat">
+          <div class="label">Replenished</div>
+          <div class="value">0.00 RUR</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="dashboard">
+      <div class="panel balance-panel">
+        <h3>Your Account</h3>
+        <div class="big-balance" id="bigBalance">0.00051 RUR / Day per Speed</div>
+        <div class="panel-actions">
+          <button id="collectBtn">Collect Profit</button>
+          <button id="increaseBtn">Increase Miner Speed</button>
+        </div>
+      </div>
+
+      <div class="panel history-panel">
+        <h3>Recent Purchases</h3>
+        <ul id="purchases">
+        </ul>
+      </div>
+
+      <div class="panel payments-panel">
+        <h3>Last Payments</h3>
+        <ul id="payments">
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <small>Demo static dashboard — not connected to real payments.</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
